@@ -1,16 +1,16 @@
 title:              MyDataQuest
 email:              joshua.hasan@hotmail.com
-description:        Portfolio Project and More!
+description:        Portfolio Projects and More!
 author:             Joshua Hasan
 baseurl:            ""
 url:                "https:mydataquest.github.io"
 
 # Social Profiles
 twitter_username:   
-github_username:    
+github_username: "MyDataQuest"     
 facebook_username:  
 instagram_username:  
-linkedin_username:
+linkedin_username: "joshuahasan"
 
 # Add your google-analytics ID here to activate google analytics
 google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
