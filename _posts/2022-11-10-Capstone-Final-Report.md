@@ -11,19 +11,19 @@ img {border: 2px solid #555;}
 </style>
 
 ## Prompt
-Cyclistic (a fictional company) is a bike-sharing company based in Chicago that services the city with 5,824 geotracked bicycles available for rent and a network of 692 stations across the city.  The marketing team were asked to design marketing strategies aimed to convert casual riders into annual members. As a junior data analyst in the marketing team, my task is to answer the question **“How do annual members and casual riders use Cyclistic bikes differently?”.** Public data regarding Cyclistic’s rides history was provided. Please use the following [link](/2022/10/30/Project-Prompt) to see full project prompt details. 
+Cyclistic (a fictional company) is a bike-sharing company based in Chicago that services the city with 5,824 geotracked bicycles available for rent and a network of 692 stations across the city.  The marketing team were asked to design marketing strategies aimed to convert casual riders into annual members. As a junior data analyst in the marketing team, my task is to answer the question **“How do annual members and casual riders use Cyclistic bikes differently?”.** Public data regarding Cyclistic’s rides history was provided. Please use the following [***link***](/2022/10/30/Project-Prompt) to see full project prompt details. 
 
 ## Preparation Process
 Cyclistic have provided historical trip data in the format of csv files. Each csv file contains a month’s worth of trip data. For the purpose of this case study, data from October 2021 to September 2022 will be analyzed. 
-- Used Excel to do initial analysis and added several calculated columns to divide the time veraibles to a finer granularity
-- Uploaded to R due to the size limitation, to aggregate and consolidate
-- Uploaded the consolidated new file to Big Query where we leveraged SQL queries to:
-- Do some data cleaning
-- Added some more columns/variables to the dataset
+- Leveraged MS Excel for initial analysis and added several calculated columns to drill down time veraibles to a finer granularity.
+- Consolidated Raw CSV files using R, due to the file size limitation in MS Excel. 
+- Uploaded the consolidated raw data to Big Query where we leveraged SQL queries to:
+    - Do some data cleaning.
+    - Added columns to the cleaned dataset.
 - Saved the final result as a separate table
 - Uploaded the final result to Tableau to run some data visualizations. 
 
-Please see the following link to see more detailed version of the data cleanup. 
+Please see the following [***link***](/2022/10/30/Capstone-Cleaning) to see more details about the raw data cleanup. 
  
 ## Analysis & Visualization
 
@@ -52,7 +52,7 @@ The chart above takes a closer look at both class of user's rides broken down to
 
 <img src = "/img/posts/Capstone/Rides_By_Date_Type.JPG" alt = "Rides by Hour of Day" width = "900" class = "center">
 
-A "Date Type" column was added to the data table by referencing a list of US public holidays in order to determine if a date falls on a "Weekday", "Weekend" or a "Public Holiday". Analyzing the rider's usage throughout the year based on the date type reveals that public holidays and weekends account for a larger demand in rides amongst Casual Users totaling 43% of its rides. Whilst there is less of an impact amongst Member users, where Weekends and Public Holidays only account for 27.8% of its ridership and a greater portion of rides are taken during the weekdays. 
+A "Date Type" column was added to the data table by referencing a list of US public holidays in order to determine if a date falls on a "Weekday", "Weekend" or a "Public Holiday". Analyzing the rider's usage throughout the year based on the date type reveals that public holidays and weekends account for a larger demand in rides amongst casual users totaling 43% of its rides. Whilst there is less of an impact amongst member users, where weekends and public holidays only account for 27.8% of its ridership and a greater portion of rides are taken during the weekdays. 
 
 Several observations were made after analyzing the rides dataset from a time and geographical standpoint: 
 - Annual members use are more regimented with peaks during popular commute times in the morning and in the evening. And overall ride demand peaks in the middle of the work week. 

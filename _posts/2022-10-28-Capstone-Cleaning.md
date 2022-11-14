@@ -29,7 +29,7 @@ The following columns break down the "started_at" / "ended_at" time stamp to a f
 - time_ended  =TEXT(D2,"HH:MM:SS")
 
 ## Combining Dataset
-Since the files are too large to combine and save in Excel, I leveraged R to Load, consolidate and export the dataset. I made 12 separate dataframes by reading the individual csv files.  
+Since the raw data is too large to consolidate in one csv using MS Excel, I leveraged R to load, consolidate and export the dataset. I made 12 separate dataframes by reading the individual csv files.  
 
 ``` R
 df1 <- read.csv("df1.csv")
@@ -91,7 +91,7 @@ where
 
 ```
 
-## Adding additional columns
+## Additional Columns 
 The following case statements and subqueries were added to create the "date_type" and "season" columns. These columns would help in our analysis to understand how annual members and casual riders use Cyclistic's rental bikes differently. 
 
 ``` sql
